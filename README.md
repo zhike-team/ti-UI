@@ -5,13 +5,13 @@
 
 ### 使用方法
 1. 安装
-`npm install --save @zhike/ti-ui`
+```npm install --save @zhike/ti-ui```
 
 2. 安装项目依赖，如已安装可跳过
-基础框架 [React][1] :
-`npm install --save react`
-CSS-in-JS 框架 [aphrodite][2] :
-`npm install --save aphrodite`
+- 基础框架 [React][1] :
+```npm install --save react```
+- CSS-in-JS 框架 [aphrodite][2] :
+```npm install --save aphrodite```
 
 2. 在页面使用需要的组件
 ```
