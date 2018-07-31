@@ -1,0 +1,49 @@
+{
+  "name": "@zhike/ti-ui",
+  "version": "1.0.1",
+  "description": "common UI components for Zhike-tiku",
+  "main": "index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src --out-dir lib"
+  },
+  "devDependencies": {
+    "react": "^16.0.0",
+    "aphrodite": "^1.2.5",
+    "babel-cli": "^6.0.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "8.2.3",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-module-resolver": "^2.7.1",
+    "babel-plugin-transform-react-jsx-source": "^6.22.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-runtime": "^6.26.0",
+    "eslint": "4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-import-resolver-webpack": "^0.8.3",
+    "eslint-loader": "2.0.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "7.8.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhike-team/ti-UI.git"
+  },
+  "keywords": [
+    "zhike"
+  ],
+  "author": "zhike",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhike-team/ti-UI/issues"
+  },
+  "homepage": "https://github.com/zhike-team/ti-UI#readme"
+}

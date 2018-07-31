@@ -1,0 +1,47 @@
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "env": {
+    "node": true,
+    "jest": true
+  },
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "./build/webpack.dev.js"
+      }
+    }
+  },
+  "rules": {
+    "global-require": "off",
+    "import/no-extraneous-dependencies": "off",
+    "react/jsx-filename-extension": ["off"],
+    "react/prefer-stateless-function": "off",
+    "class-methods-use-this": "off",
+    "react/no-did-mount-set-state": "off",
+    "react/no-unused-prop-types": "off",
+    "react/forbid-prop-types": "off",
+    "react/no-string-refs": "off",
+    "react/sort-comp": "off",
+    "no-await-in-loop": "off",
+    "import/prefer-default-export": "off",
+    "no-shadow": "off",
+    "no-console": "off",
+    "no-else-return": "off",
+    "max-len": "off",
+    "consistent-return": "off",
+    "react/no-array-index-key": "off",
+    "jsx-a11y/href-no-hash": "off",
+    "jsx-a11y/anchor-is-valid": ["warn", { "aspects": ["invalidHref"] }],
+    "jsx-a11y/click-events-have-key-events": "off",
+    "no-mixed-operators": "off",
+    "react/no-did-update-set-state": "off",
+    "no-nested-ternary": "off",
+    "function-paren-newline": "off",
+    "jsx-a11y/alt-text": "off",
+    "no-unused-expressions": "off",
+    "object-curly-newline": "off",
+    "arrow-parens": [1, "as-needed"],
+    "no-case-declarations": "off"
+  }
+}
