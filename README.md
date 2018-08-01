@@ -74,28 +74,32 @@ export default MyComponent
 |propName   |required|type  |default  |option|
 |:---------:|:------:|:----:|:-------:|------|
 |className  |        |      |undefined|      |
-注：支持<img />标签原生属性
+
+注：支持 img 标签原生属性
 
 ### * Input
 
 |propName   |required|type  |default  |option|
 |:---------:|:------:|:----:|:-------:|------|
 |className  |        |      |undefined|      |
-注：支持<input />标签原生属性
+
+注：支持 input 标签原生属性
 
 ### * Textarea
 
 |propName   |required|type  |default  |option|
 |:---------:|:------:|:----:|:-------:|------|
 |className  |        |      |undefined|      |
-注：支持<textarea />标签原生属性
+
+注：支持 textarea 标签原生属性
 
 ### * View
 
 |propName   |required|type  |default  |option|
 |:---------:|:------:|:----:|:-------:|------|
 |className  |        |      |undefined|      |
-注：支持<div />标签原生属性
+
+注：支持 div 标签原生属性
 
 [1]: https://github.com/facebook/react
 [2]: https://github.com/Khan/aphrodite
