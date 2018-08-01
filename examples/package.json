@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@zhike/ti-ui": "^1.0.1",
+    "@zhike/ti-ui": "^1.0.2",
     "aphrodite": "^2.2.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",

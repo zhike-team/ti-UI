@@ -3,9 +3,6 @@ body {
   padding: 15px;
 }
 
-.App {
-}
-
 header {
   background-color: #333;
   padding: 20px;
@@ -14,5 +11,12 @@ header {
   line-height: 60px
 }
 
-content {
+.para {
+  padding: 0 15px;
+  display: flex;
+  justify-content: left;
+}
+
+.para + .para {
+  margin-top: 15px
 }
