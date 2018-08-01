@@ -4,7 +4,8 @@
 
 # node.js
 #
-node_modules/
+node_modules
+examples/node_modules
 npm-debug.log
 yarn-error.log
 
