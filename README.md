@@ -7,6 +7,7 @@
 cd examples
 npm install
 npm start
+open http://localhost:3000/
 ```
 
 ## 安装
@@ -46,6 +47,18 @@ export default MyComponent
 ## API
 
 * button
+
+|propName     |required|type    |default  |
+|:-----------:|:------:|:------:|:-------:|
+|text         |true    |string  |         |
+|className    |        |        |undefined|
+|textClassName|        |        |undefined|
+|leftIcon     |        |        |undefined|
+|rightIcon    |        |        |undefined|
+|theme        |        |string  |''       |
+|onClick      |        |function|undefined|
+|isAvailable  |        |boolean |true     |
+
 * icon
 * image
 * input
