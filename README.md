@@ -46,7 +46,7 @@ export default MyComponent
 
 ## API
 
-### * Button
+### Button
 
 |propName     |required|type  |default  |option            |
 |:-----------:|:------:|:----:|:-------:|------------------|
@@ -59,7 +59,7 @@ export default MyComponent
 |onClick      |        |func  |undefined|                  |
 |isAvailable  |        |bool  |true     |                  |
 
-### * Icon
+### Icon
 
 |propName   |required|type  |default  |option|
 |:---------:|:------:|:----:|:-------:|------|
@@ -69,7 +69,7 @@ export default MyComponent
 |marginRight|        |string|0        |      |
 |source     |        |string|''       |      |
 
-### * Image
+### Image
 
 |propName   |required|type  |default  |option|
 |:---------:|:------:|:----:|:-------:|------|
@@ -77,7 +77,7 @@ export default MyComponent
 
 注：支持 img 标签原生属性
 
-### * Input
+### Input
 
 |propName   |required|type  |default  |option|
 |:---------:|:------:|:----:|:-------:|------|
@@ -85,7 +85,7 @@ export default MyComponent
 
 注：支持 input 标签原生属性
 
-### * Textarea
+### Textarea
 
 |propName   |required|type  |default  |option|
 |:---------:|:------:|:----:|:-------:|------|
@@ -93,7 +93,7 @@ export default MyComponent
 
 注：支持 textarea 标签原生属性
 
-### * View
+### View
 
 |propName   |required|type  |default  |option|
 |:---------:|:------:|:----:|:-------:|------|
