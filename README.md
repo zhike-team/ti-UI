@@ -9,13 +9,15 @@ npm start
 open http://localhost:3000/
 ```
 
-## 安装
+## 使用指南
+
+### 安装
 
 ```bash
 npm install --save @zhike/ti-ui
 ```
 
-## 安装项目依赖，如已安装可跳过
+### 安装项目依赖，如已安装可跳过
 
 *  基础框架 [React][1] :
 ```bash
@@ -26,7 +28,7 @@ npm install --save react
 npm install --save aphrodite
 ```
 
-## 在页面使用需要的组件
+### 在页面使用需要的组件
 
 ```javascript
 import React from 'react'
@@ -41,6 +43,16 @@ class MyComponent extends React.Component {
 }
 
 export default MyComponent
+```
+
+## 开发指南
+
+1. 修改`package.json`文件的版本号
+2. 打包到`lib`文件夹并发布
+
+```bash
+npm run build
+npm publish
 ```
 
 ## API
