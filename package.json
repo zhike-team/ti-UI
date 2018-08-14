@@ -1,6 +1,6 @@
 {
   "name": "@zhike/ti-ui",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "common UI components for Zhike-tiku",
   "main": "index.js",
   "files": [
@@ -8,10 +8,13 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel src --out-dir lib"
+    "start": "react-scripts start",
+    "build": "babel src/ui --out-dir lib"
   },
   "devDependencies": {
     "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-scripts": "1.1.4",
     "aphrodite": "^1.2.5",
     "babel-cli": "^6.0.0",
     "babel-core": "^6.26.0",

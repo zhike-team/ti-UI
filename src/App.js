@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button } from '@zhike/ti-ui'
+import { Button } from './ui'
 import styles from './styles';
 import './App.css';
 
@@ -37,7 +37,7 @@ class App extends Component {
             <Button className={styles.button} text="click" theme="hollow" onClick={this.onClick}></Button>
           </div>
 
-          <div className="para">isAvailable</div>
+          <div className="para">isAvailable = false</div>
           <div className="para">
             <Button className={styles.button} text="default" isAvailable={false}></Button>
             <Button className={styles.button} text="darken" theme="darken" isAvailable={false}></Button>

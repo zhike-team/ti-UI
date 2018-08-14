@@ -23,6 +23,7 @@ export default class Image extends Component {
     return (
       <img
         {...this.props}
+        alt=""
         className={css.apply(this, realClassName)}
       />
     );
