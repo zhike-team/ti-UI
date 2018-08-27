@@ -5,7 +5,7 @@
 
 ```bash
 npm install
-npm start
+npm run storybook
 open http://localhost:3000/
 ```
 
