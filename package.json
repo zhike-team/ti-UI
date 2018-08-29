@@ -8,7 +8,7 @@
   ],
   "scripts": {
     "build": "babel src --out-dir lib",
-    "storybook": "start-storybook -p 3000 -c stories"
+    "storybook": "start-storybook -p 3001 -c stories"
   },
   "devDependencies": {
     "@storybook/react": "^3.4.10",

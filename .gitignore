@@ -5,10 +5,8 @@
 # node.js
 #
 /node_modules
-/lib
 npm-debug.log
 yarn-error.log
-package-lock.json
 
 .vscode
 .idea
