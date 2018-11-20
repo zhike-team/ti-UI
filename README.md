@@ -28,6 +28,11 @@ npm install --save react
 npm install --save aphrodite
 ```
 
+#### 如果需要使用 Scrollbar的话
+*  react-custom-scrollbars 框架 [scrollbars][3] :
+```bash
+npm install --save react-custom-scrollbars
+```
 ### 在页面使用需要的组件
 
 ```javascript
@@ -112,5 +117,14 @@ npm publish
 
 注：支持 div 标签原生属性
 
+### Scorllbar 
+
+|propName   |required|type  |default  |option|
+|:---------:|:------:|:----:|:-------:|------|
+|className  |        |   object   |undefined|      |
+|width  |        |string|'100%'|      |
+|height  |        |string|'100%'|      |
+
 [1]: https://github.com/facebook/react
 [2]: https://github.com/Khan/aphrodite
+[3]: https://github.com/malte-wessel/react-custom-scrollbars
