@@ -1,6 +1,6 @@
 {
   "name": "@zhike/ti-ui",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "common UI components for Zhike-tiku",
   "main": "index.js",
   "files": [
