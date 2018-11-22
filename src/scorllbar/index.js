@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Scrollbars } from 'react-custom-scrollbars';
 import { css } from 'aphrodite';
+import { omit } from 'lodash';
 import styles from './styles';
 
 // 普通视图
@@ -55,7 +56,7 @@ export default class Scrollbar extends Component {
         onUpdate={onUpdate}
       >
         <div
-          {...this.props}
+          {...omit(this.props, ['onScroll', 'onScrollFrame', 'onScrollStart', 'onScrollStop', 'onUpdate'])}
           className={css.apply(this, realClassName)}
         />
       </Scrollbars>
