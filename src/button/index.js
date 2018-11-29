@@ -13,6 +13,7 @@ export default class Button extends Component {
     theme: PropTypes.string,
     onClick: PropTypes.func,
     isAvailable: PropTypes.bool,
+    loading: PropTypes.bool,
   };
 
   static defaultProps = {
@@ -23,12 +24,13 @@ export default class Button extends Component {
     theme: '',
     onClick: undefined,
     isAvailable: true,
+    loading: false,
   };
 
   render() {
     const {
       text, className, leftIcon, textClassName,
-      rightIcon, theme, onClick, isAvailable,
+      rightIcon, theme, onClick, isAvailable, loading
     } = this.props;
     let themeStyle;
     switch (theme) {
@@ -49,7 +51,7 @@ export default class Button extends Component {
           !isAvailable ? styles.containerUnavailable : undefined,
           className,
         ]}
-        onClick={isAvailable ? onClick : undefined}
+        onClick={isAvailable && !loading ? onClick : undefined}
       >
         {leftIcon && <Icon source={leftIcon} width="12" height="12" marginRight="3" />}
         <View
@@ -61,6 +63,9 @@ export default class Button extends Component {
           {text}
         </View>
         {rightIcon && <Icon source={rightIcon} width="12" height="12" marginLeft="3" />}
+        {
+          loading && isAvailable && <View className={styles.mask}><View className={styles.buttonLoading} /></View>
+        }
       </View>
     );
   }

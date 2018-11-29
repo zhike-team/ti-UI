@@ -29,6 +29,15 @@ storiesOf('Button', module)
       <Button text="hollow" theme="hollow" isAvailable={false}></Button>
     </React.Fragment>
   ))
+  .add('loading', () => (
+    <React.Fragment>
+      <Button text="default" loading={true}></Button>
+      <br />
+      <Button text="darken" theme="darken" loading={true}></Button>
+      <br />
+      <Button text="hollow" theme="hollow" loading={true}></Button>
+    </React.Fragment>
+  ))
   .add('onClick', () => (
     <Button text="click" onClick={action('clicked')}></Button>
   ));

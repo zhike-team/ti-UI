@@ -74,6 +74,7 @@ npm publish
 |theme        |        |string|''       |'darken', 'hollow'|
 |onClick      |        |func  |undefined|                  |
 |isAvailable  |        |bool  |true     |                  |
+|loading      |        |bool  |false    |                  |
 
 ### Icon
 

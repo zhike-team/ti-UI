@@ -1,7 +1,17 @@
 import { StyleSheet } from 'aphrodite';
 
+const circle = {
+  '0%': {
+    transform: 'rotate(0deg)',
+  },
+  '100%': {
+    transform: 'rotate(360deg)',
+  },
+};
+
 export default StyleSheet.create({
   container: {
+    position: 'relative',
     flexDirection: 'row',
     width: 86,
     height: 28,
@@ -13,6 +23,7 @@ export default StyleSheet.create({
     cursor: 'pointer',
     transition: '0.15s',
     userSelect: 'none',
+    overflow: 'hidden',
     ':hover': {
       backgroundColor: '#5BADFF',
     },
@@ -43,6 +54,34 @@ export default StyleSheet.create({
     cursor: 'default',
     opacity: '0.5',
     pointerEvents: 'none',
+  },
+
+  mask: {
+    flex: 1,
+    flexDirection: 'row',
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    height: '100%',
+    width: '100%',
+    backgroundColor: 'rgba(0,0,0,.5)',
+    // borderRadius: 3,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+
+  buttonLoading: {
+    width: 14,
+    height: 14,
+    border: '2px solid transparent',
+    borderLeftColor: '#fff',
+    borderRightColor: '#fff',
+    borderTopColor: '#fff',
+    borderRadius: '50%',
+    animationName: [circle],
+    animationDuration: '1s',
+    animationTimingFunction: 'linear',
+    animationIterationCount: 'infinite',
   },
 
   text: {
