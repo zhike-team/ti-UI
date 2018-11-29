@@ -118,18 +118,18 @@ npm publish
 
 注：支持 div 标签原生属性
 
-### Scorllbar 
+### Scorllbar
 
-|propName   |required|type  |default  |desc|
-|:---------:|:------:|:----:|:-------:|------|
-|className  |        |   object   |undefined|      |
-|width  |        |string|'100%'|      |
-|height  |        |string|'100%'|      |
-|onScroll  |        | func |()=> {}|  天然滚动事件调用  |
-|onScrollFrame  |        |func |()=> {}| 动画帧内运行。通行证关于当前的滚动位置的一些方便的值 |
-|onScrollStop  |        |func |()=> {}| 当滚动停止时调用   |
-|onScrollStart |        |func |()=> {}| 滚动开始时调用   |
-|onUpdate |        |func |()=> {}| 在组件更新时调用。在动画帧内运行   |
+|propName     |required|type  |default  |desc          |
+|:-----------:|:------:|:----:|:-------:|--------------|
+|className    |        |object|undefined|              |
+|width        |        |string|'100%'   |              |
+|height       |        |string|'100%'   |              |
+|onScroll     |        |func  |() => {} |天然滚动事件调用|
+|onScrollFrame|        |func  |() => {} |动画帧内运行。通行证关于当前的滚动位置的一些方便的值|
+|onScrollStop |        |func  |() => {} |当滚动停止时调用|
+|onScrollStart|        |func  |() => {} |滚动开始时调用  |
+|onUpdate     |        |func  |() => {} |在组件更新时调用。在动画帧内运行|
 
 [1]: https://github.com/facebook/react
 [2]: https://github.com/Khan/aphrodite
