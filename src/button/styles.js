@@ -23,7 +23,6 @@ export default StyleSheet.create({
     cursor: 'pointer',
     transition: '0.15s',
     userSelect: 'none',
-    overflow: 'hidden',
     ':hover': {
       backgroundColor: '#5BADFF',
     },
@@ -65,7 +64,7 @@ export default StyleSheet.create({
     height: '100%',
     width: '100%',
     backgroundColor: 'rgba(0,0,0,.5)',
-    // borderRadius: 3,
+    borderRadius: '2px',
     justifyContent: 'center',
     alignItems: 'center',
   },
