@@ -1,59 +1,217 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
+import { withInfo } from '@storybook/addon-info';
 import { Button, Input, Textarea, Scrollbar } from '../src';
+import TableComponent from './tableComponent';
 
 storiesOf('Button', module)
-  .add('theme', () => (
+  .addDecorator(withInfo)
+  .addParameters({
+    info: {
+      // Make a default for all stories in this book,
+      inline: true, // where the components are inlined
+      styles: {
+        header: {
+          h1: {
+            color: '#62C9FF',
+          },
+          h2: {
+            color: '#32363A',
+          },
+        },
+      },
+      source: false,
+    },
+  },
+  )
+  .add('theme', (() => (
     <React.Fragment>
-      <Button text="default"></Button>
+      <Button text="default" />
       <br />
-      <Button text="darken" theme="darken"></Button>
+      <Button text="darken" theme="darken" />
       <br />
-      <Button text="hollow" theme="hollow"></Button>
+      <Button text="hollow" theme="hollow" />
     </React.Fragment>
-  ))
-  .add('with icon', () => (
+  )), {
+    info: {
+      text: `
+      Button按钮具有三个主题theme，默认、darken和hollow：
+      ~~~js
+        <Button text="default"></Button>
+        <br />
+        <Button text="darken" theme="darken"></Button>
+        <br />
+        <Button text="hollow" theme="hollow"></Button>
+      ~~~
+    `,
+      TableComponent,
+    },
+  })
+  .add('with icon', (() => (
     <React.Fragment>
-      <Button text="leftIcon" theme="hollow" leftIcon={require('./static/correct.png')}></Button>
+      <Button text="leftIcon" theme="hollow" leftIcon={require('./static/correct.png')} />
       <br />
-      <Button text="rightIcon" theme="hollow" rightIcon={require('./static/correct.png')}></Button>
+      <Button text="rightIcon" theme="hollow" rightIcon={require('./static/correct.png')} />
     </React.Fragment>
-  ))
-  .add('unavailable', () => (
+  )), {
+    info: {
+      text: `
+      可以设置icon图标 使用组件方法如下：
+      ~~~js
+        <Button text="leftIcon" theme="hollow" leftIcon={require('./static/correct.png')} />
+        <br />
+        <Button text="rightIcon" theme="hollow" rightIcon={require('./static/correct.png')} />
+      ~~~
+      `,
+      TableComponent,
+    },
+  })
+  .add('unavailable', (() => (
     <React.Fragment>
-      <Button text="default" isAvailable={false}></Button>
+      <Button text="default" isAvailable={false} />
       <br />
-      <Button text="darken" theme="darken" isAvailable={false}></Button>
+      <Button text="darken" theme="darken" isAvailable={false} />
       <br />
-      <Button text="hollow" theme="hollow" isAvailable={false}></Button>
+      <Button text="hollow" theme="hollow" isAvailable={false} />
     </React.Fragment>
-  ))
-  .add('loading', () => (
+  )), {
+    info: {
+      text: `
+      isAvailable 是否可以点击的状态 使用组件方法如下：
+      ~~~js
+        <Button text="default" isAvailable={false} />
+        <br />
+        <Button text="darken" theme="darken" isAvailable={false} />
+        <br />
+        <Button text="hollow" theme="hollow" isAvailable={false} />
+      ~~~
+      `,
+      TableComponent,
+    },
+  })
+  .add('loading', (() => (
     <React.Fragment>
-      <Button text="default" loading={true}></Button>
+      <Button text="default" loading={true} />
       <br />
-      <Button text="darken" theme="darken" loading={true}></Button>
+      <Button text="darken" theme="darken" loading={true} />
       <br />
-      <Button text="hollow" theme="hollow" loading={true}></Button>
+      <Button text="hollow" theme="hollow" loading={true} />
     </React.Fragment>
-  ))
-  .add('onClick', () => (
-    <Button text="click" onClick={action('clicked')}></Button>
-  ));
+  )), {
+    info: {
+      text: `
+      isAvailable 是否可以点击的状态 使用组件方法如下：
+      ~~~js
+        <Button text="default" loading={true} />
+        <br />
+        <Button text="darken" theme="darken" loading={true} />
+        <br />
+        <Button text="hollow" theme="hollow" loading={true} />
+      ~~~
+      `,
+      TableComponent,
+    },
+  })
+  .add('onClick', (() => (
+    <Button text="click" onClick={() => alert('clicked')} />
+  )), {
+    info: {
+      text: `
+      使用组件方法如下：
+      ~~~js
+        <Button text="click" onClick={() => alert('clicked')} />
+      ~~~
+      `,
+      TableComponent,
+    },
+  });
 
 storiesOf('Input', module)
-  .add('default', () => (
-    <Input placeholder="请输入答案"></Input>
-  ));
+  .addDecorator(withInfo)
+  .addParameters({
+    info: {
+      // Make a default for all stories in this book,
+      inline: true, // where the components are inlined
+      styles: {
+        header: {
+          h1: {
+            color: '#62C9FF',
+          },
+          h2: {
+            color: '#32363A',
+          },
+        },
+      },
+      source: false,
+    },
+  })
+  .add('default', (() => (
+    <Input placeholder="请输入答案" />
+  )), {
+    info: {
+      text: `
+      使用组件方法如下：
+      ~~~js
+        <Input placeholder="请输入答案" />
+      ~~~
+      `,
+      TableComponent,
+    },
+  });
 
 storiesOf('Textarea', module)
-  .add('default', () => (
-    <Textarea placeholder="请输入答案" rows={5}></Textarea>
-  ));
+  .addDecorator(withInfo)
+  .addParameters({
+    info: {
+      // Make a default for all stories in this book,
+      inline: true, // where the components are inlined
+      styles: {
+        header: {
+          h1: {
+            color: '#62C9FF',
+          },
+          h2: {
+            color: '#32363A',
+          },
+        },
+      },
+      source: false,
+    },
+  })
+  .add('default', (() => (
+    <Textarea placeholder="请输入答案" rows={5} />
+  )), {
+    info: {
+      text: `
+      使用组件方法如下：
+      ~~~js
+        <Textarea placeholder="请输入答案" rows={5} />
+      ~~~
+      `,
+      TableComponent,
+    },
+  });
 
 storiesOf('Scrollbar', module)
-  .add('default', () => (
+  .addDecorator(withInfo)
+  .addParameters({
+    info: {
+      // Make a default for all stories in this book,
+      inline: true, // where the components are inlined
+      styles: {
+        header: {
+          h1: {
+            color: '#62C9FF',
+          },
+          h2: {
+            color: '#32363A',
+          },
+        },
+      },
+      source: false,
+    },
+  })
+  .add('default', (() => (
     <Scrollbar
       width="500px"
       height="200px"
@@ -84,7 +242,24 @@ storiesOf('Scrollbar', module)
         <p>世间万物皆有自己的季节，做任何事情也有一个恰当的时机。希望你有机会在雨中狂奔一回。</p>
       </div>
     </Scrollbar>
-  ))
+  )), {
+    info: {
+      text: `
+      使用组件方法如下：
+      ~~~js
+        <Scrollbar
+          width="500px"
+          height="200px"
+        >
+          <div>
+            <p>外面下着倾盆大雨。雨水溢满了檐槽，来不及排走，就迫不及待地涌涨上地面。</p>
+          </div>
+        </Scrollbar>
+      ~~~
+      `,
+      TableComponent,
+    },
+  })
   .add('onScroll', () => (
     <Scrollbar
       width="500px"

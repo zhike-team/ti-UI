@@ -8,10 +8,16 @@
   ],
   "scripts": {
     "build": "babel src --out-dir lib",
+    "deploy-storybook": "storybook-to-ghpages",
+    "build-storybook": "build-storybook -c stories",
     "storybook": "start-storybook -p 3001 -c stories"
   },
   "devDependencies": {
-    "@storybook/react": "^3.4.10",
+    "@storybook/addon-info": "^4.0.11",
+    "@storybook/addon-options": "^5.0.9",
+    "@storybook/react": "^5.0.9",
+    "@storybook/storybook-deployer": "^2.8.1",
+    "@storybook/theming": "^5.0.9",
     "aphrodite": "^1.2.5",
     "babel-cli": "^6.0.0",
     "babel-core": "^6.26.0",

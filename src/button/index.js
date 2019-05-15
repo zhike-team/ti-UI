@@ -30,7 +30,7 @@ export default class Button extends Component {
   render() {
     const {
       text, className, leftIcon, textClassName,
-      rightIcon, theme, onClick, isAvailable, loading
+      rightIcon, theme, onClick, isAvailable, loading,
     } = this.props;
     let themeStyle;
     switch (theme) {
